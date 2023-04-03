@@ -29,8 +29,8 @@ class _LoadingPageState extends State<LoadingPage> {
       time = instance.time;
     });
   }
+  
   @override
-
   void initState() {
     // TODO: implement initState
     super.initState();

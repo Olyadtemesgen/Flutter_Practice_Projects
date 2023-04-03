@@ -17,6 +17,12 @@ class _HomePageState extends State<HomePage> {
     
     print(data);
     return MaterialApp(
+      theme: ThemeData(
+        fontFamily: 'Georgia',
+        primaryColor: Colors.grey[500],
+        splashColor: Colors.yellow
+
+      ),
        debugShowCheckedModeBanner: false,
       home:Scaffold(
         
@@ -73,6 +79,25 @@ class _HomePageState extends State<HomePage> {
           ),
         ),
       ),
+      
+  bottomNavigationBar: BottomNavigationBar(
+    backgroundColor: Colors.blueGrey,
+    // selectedItemColor: Colors.amber,
+    items: const <BottomNavigationBarItem>[
+      BottomNavigationBarItem(
+        icon: Icon(Icons.call),
+        label: 'Calls',
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.camera),
+        label: 'Camera',
+      ),
+      BottomNavigationBarItem(
+        icon: Icon(Icons.chat),
+        label: 'Chats',
+      ),
+    ],
+  ),
       ),
     );
   }
